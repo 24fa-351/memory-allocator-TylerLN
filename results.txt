@@ -1,237 +1,243 @@
-[0] size: 51
-[0] 'Now is the time for all good people to come to the'
+[0] size: 38
+[0] 'Now is the time for all good people t'
 
-[0] randomly freeing 0x563511feb660 ('Now is the time for all good people to come to the')
-[0] freed 0x563511feb660
+[0] randomly freeing 0x55d01021a660 ('Now is the time for all good people t')
+[0] freed 0x55d01021a660
 
 
 
-[1] size: 52
-[1] 'Now is the time for all good people to come to the '
+[1] size: 44
+[1] 'Now is the time for all good people to come'
 
+[1] randomly freeing 0x55d01021a698 ('Now is the time for all good people to come')
+[1] freed 0x55d01021a698
 
 
-[2] size: 19
-[2] 'Now is the time fo'
 
+[2] size: 55
+[2] 'Now is the time for all good people to come to the aid'
 
 
-[3] size: 5
-[3] 'Now '
 
-[2] randomly freeing 0x563511feb6f0 ('Now is the time fo')
-[2] freed 0x563511feb6f0
+[3] size: 47
+[3] 'Now is the time for all good people to come to'
 
 
 
-[4] size: 36
-[4] 'Now is the time for all good people'
+[4] size: 68
+[4] 'Now is the time for all good people to come to the aid of their cou'
 
-[4] randomly freeing 0x563511feb730 ('Now is the time for all good people')
-[4] freed 0x563511feb730
+[2] randomly freeing 0x55d01021a6d8 ('Now is the time for all good people to come to the aid')
+[2] freed 0x55d01021a6d8
 
 
 
-[5] size: 7
-[5] 'Now is'
+[5] size: 52
+[5] 'Now is the time for all good people to come to the '
 
-[5] randomly freeing 0x563511feb768 ('Now is')
-[5] freed 0x563511feb768
+[4] randomly freeing 0x55d01021a720 ('Now is the time for all good people to come to the aid of their cou')
+[4] freed 0x55d01021a720
 
 
 
-[6] size: 1
-[6] ''
+[6] size: 8
+[6] 'Now is '
 
-[1] randomly freeing 0x563511feb6a8 ('Now is the time for all good people to come to the ')
-[1] freed 0x563511feb6a8
+[3] randomly freeing 0x55d01021a698 ('Now is the time for all good people to come to')
+[3] freed 0x55d01021a698
 
 
 
-[7] size: 37
-[7] 'Now is the time for all good people '
+[7] size: 57
+[7] 'Now is the time for all good people to come to the aid o'
 
 
 
-[8] size: 23
-[8] 'Now is the time for al'
+[8] size: 31
+[8] 'Now is the time for all good p'
 
-[3] randomly freeing 0x563511feb718 ('Now ')
-[3] freed 0x563511feb718
 
 
+[9] size: 44
+[9] 'Now is the time for all good people to come'
 
-[9] size: 38
-[9] 'Now is the time for all good people t'
+[5] randomly freeing 0x55d01021a6d8 ('Now is the time for all good people to come to the ')
+[5] freed 0x55d01021a6d8
 
 
 
-[10] size: 12
-[a] 'Now is the '
+[10] size: 26
+[a] 'Now is the time for all g'
 
-[9] randomly freeing 0x563511feb7f8 ('Now is the time for all good people t')
-[9] freed 0x563511feb7f8
+[10] randomly freeing 0x55d01021a6d8 ('Now is the time for all g')
+[10] freed 0x55d01021a6d8
 
 
 
-[11] size: 26
-[b] 'Now is the time for all g'
+[11] size: 43
+[b] 'Now is the time for all good people to com'
 
-[10] randomly freeing 0x563511feb830 ('Now is the ')
-[10] freed 0x563511feb830
+[9] randomly freeing 0x55d01021a778 ('Now is the time for all good people to come')
+[9] freed 0x55d01021a778
 
 
 
-[12] size: 9
-[c] 'Now is t'
+[12] size: 1
+[c] ''
 
+[6] randomly freeing 0x55d01021a660 ('Now is ')
+[6] freed 0x55d01021a660
 
 
-[13] size: 62
-[d] 'Now is the time for all good people to come to the aid of the'
 
-[7] randomly freeing 0x563511feb798 ('Now is the time for all good people ')
-[7] freed 0x563511feb798
+[13] size: 51
+[d] 'Now is the time for all good people to come to the'
 
 
 
-[14] size: 71
-[e] 'Now is the time for all good people to come to the aid of their countr'
+[14] size: 40
+[e] 'Now is the time for all good people to '
 
-[12] randomly freeing 0x563511feb880 ('Now is t')
-[12] freed 0x563511feb880
+[12] randomly freeing 0x55d01021a778 ('')
+[12] freed 0x55d01021a778
 
 
 
-[15] size: 68
-[f] 'Now is the time for all good people to come to the aid of their cou'
+[15] size: 34
+[f] 'Now is the time for all good peop'
 
-[11] randomly freeing 0x563511feb850 ('Now is the time for all g')
-[11] freed 0x563511feb850
 
 
+[16] size: 28
+[10] 'Now is the time for all goo'
 
-[16] size: 37
-[10] 'Now is the time for all good people '
+[8] randomly freeing 0x55d01021a698 ('Now is the time for all good p')
+[8] freed 0x55d01021a698
 
 
 
-[17] size: 5
-[11] 'Now '
+[17] size: 73
+[11] 'Now is the time for all good people to come to the aid of their country.'
 
+[7] randomly freeing 0x55d01021a720 ('Now is the time for all good people to come to the aid o')
+[7] freed 0x55d01021a720
 
 
-[18] size: 24
-[12] 'Now is the time for all'
 
-[16] randomly freeing 0x563511feb9a0 ('Now is the time for all good people ')
-[16] freed 0x563511feb9a0
+[18] size: 47
+[12] 'Now is the time for all good people to come to'
 
+[11] randomly freeing 0x55d01021a6d8 ('Now is the time for all good people to com')
+[11] freed 0x55d01021a6d8
 
 
-[19] size: 50
-[13] 'Now is the time for all good people to come to th'
 
+[19] size: 55
+[13] 'Now is the time for all good people to come to the aid'
 
 
-[20] size: 33
-[14] 'Now is the time for all good peo'
 
-[19] randomly freeing 0x563511feba18 ('Now is the time for all good people to come to th')
-[19] freed 0x563511feba18
+[20] size: 41
+[14] 'Now is the time for all good people to c'
 
 
 
-[21] size: 42
-[15] 'Now is the time for all good people to co'
+[21] size: 18
+[15] 'Now is the time f'
 
+[20] randomly freeing 0x55d01021a6d8 ('Now is the time for all good people to c')
+[20] freed 0x55d01021a6d8
 
 
-[22] size: 65
-[16] 'Now is the time for all good people to come to the aid of their '
 
+[22] size: 25
+[16] 'Now is the time for all '
 
+[13] randomly freeing 0x55d01021a7b8 ('Now is the time for all good people to come to the')
+[13] freed 0x55d01021a7b8
 
-[23] size: 52
-[17] 'Now is the time for all good people to come to the '
 
-[15] randomly freeing 0x563511feb948 ('Now is the time for all good people to come to the aid of their cou')
-[15] freed 0x563511feb948
 
+[23] size: 45
+[17] 'Now is the time for all good people to come '
 
+[22] randomly freeing 0x55d01021a6d8 ('Now is the time for all ')
+[22] freed 0x55d01021a6d8
 
-[24] size: 36
-[18] 'Now is the time for all good people'
 
 
+[24] size: 17
+[18] 'Now is the time '
 
-[25] size: 16
-[19] 'Now is the time'
+[23] randomly freeing 0x55d01021a7b8 ('Now is the time for all good people to come ')
+[23] freed 0x55d01021a7b8
 
 
 
-[26] size: 56
-[1a] 'Now is the time for all good people to come to the aid '
+[25] size: 17
+[19] 'Now is the time '
 
 
 
-[27] size: 7
-[1b] 'Now is'
+[26] size: 44
+[1a] 'Now is the time for all good people to come'
 
 
 
-[28] size: 65
-[1c] 'Now is the time for all good people to come to the aid of their '
+[27] size: 12
+[1b] 'Now is the '
 
 
 
-[29] size: 51
-[1d] 'Now is the time for all good people to come to the'
+[28] size: 64
+[1c] 'Now is the time for all good people to come to the aid of their'
 
-[25] randomly freeing 0x563511febbb0 ('Now is the time')
-[25] freed 0x563511febbb0
+[25] randomly freeing 0x55d01021a7b8 ('Now is the time ')
+[25] freed 0x55d01021a7b8
+
+
+
+[29] size: 16
+[1d] 'Now is the time'
 [0] already freed
 [1] already freed
 [2] already freed
 [3] already freed
 [4] already freed
 [5] already freed
-[6] freeing 0x563511feb780 ()
-[6] freed 0x563511feb780
+[6] already freed
 [7] already freed
-[8] freeing 0x563511feb7d0 (Now is the time for al)
-[8] freed 0x563511feb7d0
+[8] already freed
 [9] already freed
 [10] already freed
 [11] already freed
 [12] already freed
-[13] freeing 0x563511feb8a0 (Now is the time for all good people to come to the aid of the)
-[13] freed 0x563511feb8a0
-[14] freeing 0x563511feb8f0 (Now is the time for all good people to come to the aid of their countr)
-[14] freed 0x563511feb8f0
-[15] already freed
-[16] already freed
-[17] freeing 0x563511feb9d8 (Now )
-[17] freed 0x563511feb9d8
-[18] freeing 0x563511feb9f0 (Now is the time for all)
-[18] freed 0x563511feb9f0
-[19] already freed
-[20] freeing 0x563511feba60 (Now is the time for all good peo)
-[20] freed 0x563511feba60
-[21] freeing 0x563511feba98 (Now is the time for all good people to co)
-[21] freed 0x563511feba98
-[22] freeing 0x563511febad8 (Now is the time for all good people to come to the aid of their )
-[22] freed 0x563511febad8
-[23] freeing 0x563511febb30 (Now is the time for all good people to come to the )
-[23] freed 0x563511febb30
-[24] freeing 0x563511febb78 (Now is the time for all good people)
-[24] freed 0x563511febb78
+[13] already freed
+[14] freeing 0x55d01021a660 (Now is the time for all good people to )
+[14] freed 0x55d01021a660
+[15] freeing 0x55d01021a778 (Now is the time for all good peop)
+[15] freed 0x55d01021a778
+[16] freeing 0x55d01021a800 (Now is the time for all goo)
+[16] freed 0x55d01021a800
+[17] freeing 0x55d01021a830 (Now is the time for all good people to come to the aid of their country.)
+[17] freed 0x55d01021a830
+[18] freeing 0x55d01021a698 (Now is the time for all good people to come to)
+[18] freed 0x55d01021a698
+[19] freeing 0x55d01021a720 (Now is the time for all good people to come to the aid)
+[19] freed 0x55d01021a720
+[20] already freed
+[21] freeing 0x55d01021a890 (Now is the time f)
+[21] freed 0x55d01021a890
+[22] already freed
+[23] already freed
+[24] freeing 0x55d01021a6d8 (Now is the time )
+[24] freed 0x55d01021a6d8
 [25] already freed
-[26] freeing 0x563511febbd0 (Now is the time for all good people to come to the aid )
-[26] freed 0x563511febbd0
-[27] freeing 0x563511febc18 (Now is)
-[27] freed 0x563511febc18
-[28] freeing 0x563511febc30 (Now is the time for all good people to come to the aid of their )
-[28] freed 0x563511febc30
-[29] freeing 0x563511febc88 (Now is the time for all good people to come to the)
-[29] freed 0x563511febc88
+[26] freeing 0x55d01021a8b8 (Now is the time for all good people to come)
+[26] freed 0x55d01021a8b8
+[27] freeing 0x55d01021a8f8 (Now is the )
+[27] freed 0x55d01021a8f8
+[28] freeing 0x55d01021a918 (Now is the time for all good people to come to the aid of their)
+[28] freed 0x55d01021a918
+[29] freeing 0x55d01021a7b8 (Now is the time)
+[29] freed 0x55d01021a7b8
