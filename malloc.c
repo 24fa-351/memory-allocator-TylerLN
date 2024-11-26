@@ -19,8 +19,8 @@ size_t align_size(size_t size) {
   return (size + (ALIGNMENT - 1)) & ~(ALIGNMENT - 1);
 }
 
-void *get_me_blocks(size_t how_much) {
-  void *ptr = sbrk(how_much);
+void *get_me_blocks(size_t mem_size) {
+  void *ptr = sbrk(mem_size);
   if (ptr == (void *)-1) {
     perror("sbrk failed");
     return NULL;
@@ -83,7 +83,6 @@ void xfree(void *ptr) {
   if (!ptr) return;
 
   chunk_on_heap *chunk = (chunk_on_heap *)(ptr - sizeof(chunk_on_heap));
-
   heap_insert(free_heap, *chunk);
 }
 
