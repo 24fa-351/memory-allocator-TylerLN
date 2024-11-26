@@ -5,8 +5,8 @@
 
 // define "x" for system malloc, include for our versions. Don't do both.
 #ifdef SYSTEM_MALLOC
-#define free free
-#define malloc malloc
+#define xfree free
+#define xmalloc malloc
 #else
 #include "malloc.h"
 #endif
@@ -34,7 +34,7 @@ int main(int argc, char *argv[]) {
     int size = rand_between(1, strlen(test_string) + 1);
     fprintf(stderr, "\n\n\n[%d] size: %d\n", ix, size);
 
-    ptrs[ix] = malloc(size);
+    ptrs[ix] = xmalloc(size);
     if (ptrs[ix] == NULL) {
       printf("[%d] malloc failed\n", ix);
       exit(1);
@@ -42,8 +42,8 @@ int main(int argc, char *argv[]) {
 
     int len_to_copy = MIN(strlen(test_string), size - 1);
 
-    fprintf(stderr, "[%d] ptrs[%d]: %p, going to copy %d chars\n", ix, ix,
-            ptrs[ix], len_to_copy);
+    // fprintf(stderr, "[%d] ptrs[%d]: %p, going to copy %d chars\n", ix, ix,
+    //         ptrs[ix], len_to_copy);
 
     strncpy(ptrs[ix], test_string, len_to_copy);
     ptrs[ix][len_to_copy] = '\0';
@@ -54,7 +54,7 @@ int main(int argc, char *argv[]) {
     if (ptrs[index_to_free]) {
       fprintf(stderr, "\n[%d] randomly freeing %p ('%s')\n", index_to_free,
               ptrs[index_to_free], ptrs[index_to_free]);
-      free(ptrs[index_to_free]);
+      xfree(ptrs[index_to_free]);
       fprintf(stderr, "[%d] freed %p\n", index_to_free, ptrs[index_to_free]);
       ptrs[index_to_free] = NULL;
     }
@@ -63,7 +63,7 @@ int main(int argc, char *argv[]) {
   for (int ix = 0; ix < TEST_SIZE; ix++) {
     if (ptrs[ix]) {
       fprintf(stderr, "[%d] freeing %p (%s)\n", ix, ptrs[ix], ptrs[ix]);
-      free(ptrs[ix]);
+      xfree(ptrs[ix]);
       fprintf(stderr, "[%d] freed %p\n", ix, ptrs[ix]);
     } else {
       fprintf(stderr, "[%d] already freed\n", ix);

@@ -1,107 +1,104 @@
 #include "malloc.h"
 
+#include <assert.h>
 #include <stdio.h>
 #include <string.h>
-#include <sys/mman.h>
+#include <unistd.h>
 
-#define HEAP_SIZE 1024 * 1024
+#define ALIGNMENT 8
 
-typedef struct {
-  size_t size;
-  int free;
-  void* next;
-} Block;
+typedef struct heap {
+  chunk_on_heap *data;
+  int size;
+  int capacity;
+} heap_t;
 
-void* heap_start = NULL;
-void* heap_end = NULL;
+heap_t *free_heap = NULL;
 
-void initialize_heap() {
-  if (!heap_start) {
-    void* result = mmap(NULL, HEAP_SIZE, PROT_READ | PROT_WRITE,
-                        MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
-    if (result == MAP_FAILED) {
-      perror("initialize_heap: mmap failed");
-      return;
-    }
-    heap_start = result;
-    heap_end = (char*)heap_start + HEAP_SIZE;
+size_t align_size(size_t size) {
+  return (size + (ALIGNMENT - 1)) & ~(ALIGNMENT - 1);
+}
 
-    Block* block = (Block*)heap_start;
-    block->size = HEAP_SIZE - sizeof(Block);
-    block->free = 1;
-    block->next = NULL;
+void *get_me_blocks(size_t how_much) {
+  void *ptr = sbrk(how_much);
+  if (ptr == (void *)-1) {
+    perror("sbrk failed");
+    return NULL;
   }
+  return ptr;
 }
 
-Block* find_free_block(size_t size) {
-  Block* current = (Block*)heap_start;
-  while (current && (!current->free || current->size < size)) {
-    current = current->next;
-  }
-  return current;
+void init_heap(int capacity) {
+  free_heap = (heap_t *)get_me_blocks(sizeof(heap_t));
+  free_heap->data =
+      (chunk_on_heap *)get_me_blocks(capacity * sizeof(chunk_on_heap));
+  free_heap->size = 0;
+  free_heap->capacity = capacity;
 }
 
-void split_block(Block* block, size_t size) {
-  Block* new_block = (Block*)((char*)block + sizeof(Block) + size);
-  new_block->size = block->size - size - sizeof(Block);
-  new_block->free = 1;
-  new_block->next = block->next;
-
-  block->size = size;
-  block->free = 0;
-  block->next = new_block;
+void heap_insert(heap_t *heap, chunk_on_heap chunk) {
+  assert(heap->size < heap->capacity);
+  heap->data[heap->size] = chunk;
+  heap->size++;
 }
 
-void* malloc(size_t size) {
-  if (size == 0) return NULL;
+chunk_on_heap heap_remove_min(heap_t *heap) {
+  assert(heap->size > 0);
+  chunk_on_heap min_chunk = heap->data[0];
+  heap->size--;
 
-  initialize_heap();
+  heap->data[0] = heap->data[heap->size];
+  return min_chunk;
+}
 
-  Block* block = find_free_block(size);
-  if (block) {
-    if (block->size > size + sizeof(Block)) {
-      split_block(block, size);
-    }
-    block->free = 0;
-    return (void*)((char*)block + sizeof(Block));
+void *xmalloc(size_t size) {
+  if (!free_heap) {
+    init_heap(100);
   }
 
-  fprintf(stderr, "Malloc: Out of memory\n");
-  return NULL;
-}
+  size = align_size(size);
 
-void free(void* ptr) {
-  if (!ptr) return;
-
-  Block* block = (Block*)((char*)ptr - sizeof(Block));
-  block->free = 1;
-
-  Block* current = (Block*)heap_start;
-  while (current) {
-    if (current->free && current->next && ((Block*)current->next)->free) {
-      current->size += sizeof(Block) + ((Block*)current->next)->size;
-      current->next = ((Block*)current->next)->next;
-    } else {
-      current = current->next;
+  for (int ix = 0; ix < free_heap->size; ix++) {
+    if (free_heap->data[ix].size >= size) {
+      chunk_on_heap allocated_chunk = free_heap->data[ix];
+      free_heap->data[ix] = free_heap->data[free_heap->size - 1];
+      free_heap->size--;
+      return allocated_chunk.pointer_to_start;
     }
   }
-}
 
-void* realloc(void* ptr, size_t size) {
-  if (!ptr) return malloc(size);
-  if (size == 0) {
-    free(ptr);
+  size_t total_size = size + sizeof(chunk_on_heap);
+  void *ptr = get_me_blocks(total_size);
+  if (!ptr) {
     return NULL;
   }
 
-  Block* block = (Block*)((char*)ptr - sizeof(Block));
-  if (block->size >= size) {
+  chunk_on_heap new_chunk;
+  new_chunk.size = size;
+  new_chunk.pointer_to_start = ptr + sizeof(chunk_on_heap);
+  return new_chunk.pointer_to_start;
+}
+
+void xfree(void *ptr) {
+  if (!ptr) return;
+
+  chunk_on_heap *chunk = (chunk_on_heap *)(ptr - sizeof(chunk_on_heap));
+
+  heap_insert(free_heap, *chunk);
+}
+
+void *realloc(void *ptr, size_t size) {
+  if (!ptr) return malloc(size);
+
+  chunk_on_heap *chunk = (chunk_on_heap *)(ptr - sizeof(chunk_on_heap));
+
+  if (chunk->size >= size) {
     return ptr;
   }
 
-  void* new_ptr = malloc(size);
+  void *new_ptr = malloc(size);
   if (new_ptr) {
-    memcpy(new_ptr, ptr, block->size);
+    memcpy(new_ptr, ptr, chunk->size);
     free(ptr);
   }
   return new_ptr;

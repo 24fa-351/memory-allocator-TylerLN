@@ -3,10 +3,13 @@
 
 #include <stddef.h>
 
-void* malloc(size_t size);
-void free(void* ptr);
-void* realloc(void* ptr, size_t size);
+typedef struct chunk_on_heap {
+  int size;
+  char *pointer_to_start;
+} chunk_on_heap;
 
-#define LOGGING_ENABLED 1
+void *xmalloc(size_t size);
+void xfree(void *ptr);
+void *realloc(void *ptr, size_t size);
 
 #endif
