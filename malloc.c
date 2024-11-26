@@ -7,15 +7,15 @@
 #define HEAP_SIZE 1024 * 1024
 
 typedef struct {
-  size_t heap_size;
+  size_t size;
   int free;
   void* next;
 } Block;
 
-static void* heap_start = NULL;
-static void* heap_end = NULL;
+void* heap_start = NULL;
+void* heap_end = NULL;
 
-static void initialize_heap() {
+void initialize_heap() {
   if (!heap_start) {
     void* result = mmap(NULL, HEAP_SIZE, PROT_READ | PROT_WRITE,
                         MAP_PRIVATE | MAP_ANONYMOUS, -1, 0);
@@ -27,27 +27,27 @@ static void initialize_heap() {
     heap_end = (char*)heap_start + HEAP_SIZE;
 
     Block* block = (Block*)heap_start;
-    block->heap_size = HEAP_SIZE - sizeof(Block);
+    block->size = HEAP_SIZE - sizeof(Block);
     block->free = 1;
     block->next = NULL;
   }
 }
 
-static Block* find_free_block(size_t size) {
+Block* find_free_block(size_t size) {
   Block* current = (Block*)heap_start;
-  while (current && (!current->free || current->heap_size < size)) {
+  while (current && (!current->free || current->size < size)) {
     current = current->next;
   }
   return current;
 }
 
-static void split_block(Block* block, size_t size) {
+void split_block(Block* block, size_t size) {
   Block* new_block = (Block*)((char*)block + sizeof(Block) + size);
-  new_block->heap_size = block->heap_size - size - sizeof(Block);
+  new_block->size = block->size - size - sizeof(Block);
   new_block->free = 1;
   new_block->next = block->next;
 
-  block->heap_size = size;
+  block->size = size;
   block->free = 0;
   block->next = new_block;
 }
@@ -59,14 +59,14 @@ void* malloc(size_t size) {
 
   Block* block = find_free_block(size);
   if (block) {
-    if (block->heap_size > size + sizeof(Block)) {
+    if (block->size > size + sizeof(Block)) {
       split_block(block, size);
     }
     block->free = 0;
     return (void*)((char*)block + sizeof(Block));
   }
 
-  fprintf(stderr, "malloc: Out of memory\n");
+  fprintf(stderr, "Malloc: Out of memory\n");
   return NULL;
 }
 
@@ -79,7 +79,7 @@ void free(void* ptr) {
   Block* current = (Block*)heap_start;
   while (current) {
     if (current->free && current->next && ((Block*)current->next)->free) {
-      current->heap_size += sizeof(Block) + ((Block*)current->next)->heap_size;
+      current->size += sizeof(Block) + ((Block*)current->next)->size;
       current->next = ((Block*)current->next)->next;
     } else {
       current = current->next;
@@ -95,13 +95,13 @@ void* realloc(void* ptr, size_t size) {
   }
 
   Block* block = (Block*)((char*)ptr - sizeof(Block));
-  if (block->heap_size >= size) {
+  if (block->size >= size) {
     return ptr;
   }
 
   void* new_ptr = malloc(size);
   if (new_ptr) {
-    memcpy(new_ptr, ptr, block->heap_size);
+    memcpy(new_ptr, ptr, block->size);
     free(ptr);
   }
   return new_ptr;

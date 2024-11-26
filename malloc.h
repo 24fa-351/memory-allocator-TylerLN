@@ -1,5 +1,5 @@
-#ifndef CUSTOM_MALLOC_H
-#define CUSTOM_MALLOC_H
+#ifndef MALLOC_H
+#define MALLOC_H
 
 #include <stddef.h>
 

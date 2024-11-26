@@ -1,0 +1,265 @@
+[0] size: 64
+[0] ptrs[0]: 0x7f0726143018, going to copy 63 chars
+[0] 'Now is the time for all good people to come to the aid of their'
+
+[0] randomly freeing 0x7f0726143018 ('Now is the time for all good people to come to the aid of their')
+[0] freed 0x7f0726143018
+
+
+
+[1] size: 73
+[1] ptrs[1]: 0x7f0726143018, going to copy 72 chars
+[1] 'Now is the time for all good people to come to the aid of their country.'
+
+[1] randomly freeing 0x7f0726143018 ('Now is the time for all good people to come to the aid of their country.')
+[1] freed 0x7f0726143018
+
+
+
+[2] size: 15
+[2] ptrs[2]: 0x7f0726143018, going to copy 14 chars
+[2] 'Now is the tim'
+
+
+
+[3] size: 66
+[3] ptrs[3]: 0x7f072614303f, going to copy 65 chars
+[3] 'Now is the time for all good people to come to the aid of their c'
+
+
+
+[4] size: 72
+[4] ptrs[4]: 0x7f0726143099, going to copy 71 chars
+[4] 'Now is the time for all good people to come to the aid of their country'
+
+
+
+[5] size: 46
+[5] ptrs[5]: 0x7f07261430f9, going to copy 45 chars
+[5] 'Now is the time for all good people to come t'
+
+
+
+[6] size: 72
+[6] ptrs[6]: 0x7f072614313f, going to copy 71 chars
+[6] 'Now is the time for all good people to come to the aid of their country'
+
+[4] randomly freeing 0x7f0726143099 ('Now is the time for all good people to come to the aid of their country')
+[4] freed 0x7f0726143099
+
+
+
+[7] size: 23
+[7] ptrs[7]: 0x7f0726143099, going to copy 22 chars
+[7] 'Now is the time for al'
+
+[7] randomly freeing 0x7f0726143099 ('Now is the time for al')
+[7] freed 0x7f0726143099
+
+
+
+[8] size: 63
+[8] ptrs[8]: 0x7f0726143099, going to copy 62 chars
+[8] 'Now is the time for all good people to come to the aid of thei'
+
+[5] randomly freeing 0x7f07261430f9 ('Now is the time for all good people to come t')
+[5] freed 0x7f07261430f9
+
+
+
+[9] size: 73
+[9] ptrs[9]: 0x7f072614319f, going to copy 72 chars
+[9] 'Now is the time for all good people to come to the aid of their country.'
+
+[3] randomly freeing 0x7f072614303f ('Now is the time for all good people to come to the aid of their c')
+[3] freed 0x7f072614303f
+
+
+
+[10] size: 59
+[10] ptrs[10]: 0x7f072614303f, going to copy 58 chars
+[a] 'Now is the time for all good people to come to the aid of '
+
+
+
+[11] size: 51
+[11] ptrs[11]: 0x7f0726143200, going to copy 50 chars
+[b] 'Now is the time for all good people to come to the'
+
+
+
+[12] size: 30
+[12] ptrs[12]: 0x7f07261430f9, going to copy 29 chars
+[c] 'Now is the time for all good '
+
+
+
+[13] size: 16
+[13] ptrs[13]: 0x7f072614324b, going to copy 15 chars
+[d] 'Now is the time'
+
+[13] randomly freeing 0x7f072614324b ('Now is the time')
+[13] freed 0x7f072614324b
+
+
+
+[14] size: 12
+[14] ptrs[14]: 0x7f072614324b, going to copy 11 chars
+[e] 'Now is the '
+
+[6] randomly freeing 0x7f072614313f ('Now is the time for all good people to come to the aid of their country')
+[6] freed 0x7f072614313f
+
+
+
+[15] size: 55
+[15] ptrs[15]: 0x7f072614313f, going to copy 54 chars
+[f] 'Now is the time for all good people to come to the aid'
+
+[14] randomly freeing 0x7f072614324b ('Now is the ')
+[14] freed 0x7f072614324b
+
+
+
+[16] size: 60
+[16] ptrs[16]: 0x7f072614324b, going to copy 59 chars
+[10] 'Now is the time for all good people to come to the aid of t'
+
+
+
+[17] size: 36
+[17] ptrs[17]: 0x7f072614329f, going to copy 35 chars
+[11] 'Now is the time for all good people'
+
+
+
+[18] size: 16
+[18] ptrs[18]: 0x7f07261432db, going to copy 15 chars
+[12] 'Now is the time'
+
+[16] randomly freeing 0x7f072614324b ('Now is the time for all good people to come to the aid of t')
+[16] freed 0x7f072614324b
+
+
+
+[19] size: 71
+[19] ptrs[19]: 0x7f0726143303, going to copy 70 chars
+[13] 'Now is the time for all good people to come to the aid of their countr'
+
+
+
+[20] size: 13
+[20] ptrs[20]: 0x7f072614324b, going to copy 12 chars
+[14] 'Now is the t'
+
+[12] randomly freeing 0x7f07261430f9 ('Now is the time for all good ')
+[12] freed 0x7f07261430f9
+
+
+
+[21] size: 48
+[21] ptrs[21]: 0x7f0726143362, going to copy 47 chars
+[15] 'Now is the time for all good people to come to '
+
+
+
+[22] size: 34
+[22] ptrs[22]: 0x7f07261430f9, going to copy 33 chars
+[16] 'Now is the time for all good peop'
+
+
+
+[23] size: 14
+[23] ptrs[23]: 0x7f0726143270, going to copy 13 chars
+[17] 'Now is the ti'
+
+
+
+[24] size: 48
+[24] ptrs[24]: 0x7f07261433aa, going to copy 47 chars
+[18] 'Now is the time for all good people to come to '
+
+[23] randomly freeing 0x7f0726143270 ('Now is the ti')
+[23] freed 0x7f0726143270
+
+
+
+[25] size: 58
+[25] ptrs[25]: 0x7f07261433f2, going to copy 57 chars
+[19] 'Now is the time for all good people to come to the aid of'
+
+[24] randomly freeing 0x7f07261433aa ('Now is the time for all good people to come to ')
+[24] freed 0x7f07261433aa
+
+
+
+[26] size: 34
+[26] ptrs[26]: 0x7f07261433aa, going to copy 33 chars
+[1a] 'Now is the time for all good peop'
+
+
+
+[27] size: 20
+[27] ptrs[27]: 0x7f0726143270, going to copy 19 chars
+[1b] 'Now is the time for'
+
+[19] randomly freeing 0x7f0726143303 ('Now is the time for all good people to come to the aid of their countr')
+[19] freed 0x7f0726143303
+
+
+
+[28] size: 26
+[28] ptrs[28]: 0x7f0726143303, going to copy 25 chars
+[1c] 'Now is the time for all g'
+
+
+
+[29] size: 11
+[29] ptrs[29]: 0x7f0726143335, going to copy 10 chars
+[1d] 'Now is the'
+[0] already freed
+[1] already freed
+[2] freeing 0x7f0726143018 (Now is the tim)
+[2] freed 0x7f0726143018
+[3] already freed
+[4] already freed
+[5] already freed
+[6] already freed
+[7] already freed
+[8] freeing 0x7f0726143099 (Now is the time for all good people to come to the aid of thei)
+[8] freed 0x7f0726143099
+[9] freeing 0x7f072614319f (Now is the time for all good people to come to the aid of their country.)
+[9] freed 0x7f072614319f
+[10] freeing 0x7f072614303f (Now is the time for all good people to come to the aid of )
+[10] freed 0x7f072614303f
+[11] freeing 0x7f0726143200 (Now is the time for all good people to come to the)
+[11] freed 0x7f0726143200
+[12] already freed
+[13] already freed
+[14] already freed
+[15] freeing 0x7f072614313f (Now is the time for all good people to come to the aid)
+[15] freed 0x7f072614313f
+[16] already freed
+[17] freeing 0x7f072614329f (Now is the time for all good people)
+[17] freed 0x7f072614329f
+[18] freeing 0x7f07261432db (Now is the time)
+[18] freed 0x7f07261432db
+[19] already freed
+[20] freeing 0x7f072614324b (Now is the t)
+[20] freed 0x7f072614324b
+[21] freeing 0x7f0726143362 (Now is the time for all good people to come to )
+[21] freed 0x7f0726143362
+[22] freeing 0x7f07261430f9 (Now is the time for all good peop)
+[22] freed 0x7f07261430f9
+[23] already freed
+[24] already freed
+[25] freeing 0x7f07261433f2 (Now is the time for all good people to come to the aid of)
+[25] freed 0x7f07261433f2
+[26] freeing 0x7f07261433aa (Now is the time for all good peop)
+[26] freed 0x7f07261433aa
+[27] freeing 0x7f0726143270 (Now is the time for)
+[27] freed 0x7f0726143270
+[28] freeing 0x7f0726143303 (Now is the time for all g)
+[28] freed 0x7f0726143303
+[29] freeing 0x7f0726143335 (Now is the)
+[29] freed 0x7f0726143335
