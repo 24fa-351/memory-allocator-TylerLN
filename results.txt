@@ -1,0 +1,154 @@
+[0] Allocating size: 55
+[0] Allocated: 0x557839f1c660, Content: 'Now is the time for all good people to come to the aid'
+[0] Reallocating 0x557839f1c660 to new size: 70
+[0] Reallocated: 0x557839f1c6a8, Content: 'Now is the time for all good people to come to the aid of their count'
+[0] Randomly freeing 0x557839f1c6a8 ('Now is the time for all good people to come to the aid of their count')
+
+[1] Allocating size: 216017
+[1] Allocated: 0x557839f1c700, Content: 'Now is the time for all good people to come to the aid of their country.'
+[1] Reallocating 0x557839f1c700 to new size: 233452
+[1] Reallocated: 0x557839f512e8, Content: 'Now is the time for all good people to come to the aid of their country.'
+
+[2] Allocating size: 44
+[2] Allocated: 0x557839f1c660, Content: 'Now is the time for all good people to come'
+
+[3] Allocating size: 65
+[3] Allocated: 0x557839f1c700, Content: 'Now is the time for all good people to come to the aid of their '
+
+[4] Allocating size: 35
+[4] Allocated: 0x557839f1c6a8, Content: 'Now is the time for all good peopl'
+[4] Randomly freeing 0x557839f1c6a8 ('Now is the time for all good peopl')
+
+[5] Allocating size: 9
+[5] Allocated: 0x557839f1c6a8, Content: 'Now is t'
+
+[6] Allocating size: 845330
+[6] Allocated: 0x557839f8a2e8, Content: 'Now is the time for all good people to come to the aid of their country.'
+[5] Randomly freeing 0x557839f1c6a8 ('Now is t')
+
+[7] Allocating size: 120942
+[7] Allocated: 0x55783a058910, Content: 'Now is the time for all good people to come to the aid of their country.'
+[7] Reallocating 0x55783a058910 to new size: 87105
+[7] Reallocated: 0x55783a058910, Content: 'Now is the time for all good people to come to the aid of their country.'
+
+[8] Allocating size: 24
+[8] Allocated: 0x557839f1c6a8, Content: 'Now is the time for all'
+
+[9] Allocating size: 607375
+[9] Allocated: 0x55783a076190, Content: 'Now is the time for all good people to come to the aid of their country.'
+[9] Randomly freeing 0x55783a076190 ('Now is the time for all good people to come to the aid of their country.')
+
+[10] Allocating size: 15
+[10] Allocated: 0x55783a076190, Content: 'Now is the tim'
+
+[11] Allocating size: 21
+[11] Allocated: 0x55783a10a630, Content: 'Now is the time for '
+[11] Reallocating 0x55783a10a630 to new size: 21
+[11] Reallocated: 0x55783a10a630, Content: 'Now is the time for '
+[10] Randomly freeing 0x55783a076190 ('Now is the tim')
+
+[12] Allocating size: 3
+[12] Allocated: 0x55783a076190, Content: 'No'
+[11] Randomly freeing 0x55783a10a630 ('Now is the time for ')
+
+[13] Allocating size: 49
+[13] Allocated: 0x55783a10a658, Content: 'Now is the time for all good people to come to t'
+[6] Randomly freeing 0x557839f8a2e8 ('Now is the time for all good people to come to the aid of their country.')
+
+[14] Allocating size: 19
+[14] Allocated: 0x55783a10a630, Content: 'Now is the time fo'
+[12] Randomly freeing 0x55783a076190 ('No')
+
+[15] Allocating size: 71
+[15] Allocated: 0x557839f8a2e8, Content: 'Now is the time for all good people to come to the aid of their countr'
+
+[16] Allocating size: 23
+[16] Allocated: 0x55783a076190, Content: 'Now is the time for al'
+
+[17] Allocating size: 59
+[17] Allocated: 0x55783a10a6a0, Content: 'Now is the time for all good people to come to the aid of '
+[15] Randomly freeing 0x557839f8a2e8 ('Now is the time for all good people to come to the aid of their countr')
+
+[18] Allocating size: 65
+[18] Allocated: 0x557839f8a2e8, Content: 'Now is the time for all good people to come to the aid of their '
+[18] Reallocating 0x557839f8a2e8 to new size: 86
+[18] Reallocated: 0x557839f8a2e8, Content: 'Now is the time for all good people to come to the aid of their country.'
+[18] Randomly freeing 0x557839f8a2e8 ('Now is the time for all good people to come to the aid of their country.')
+
+[19] Allocating size: 73
+[19] Allocated: 0x557839f8a2e8, Content: 'Now is the time for all good people to come to the aid of their country.'
+
+[20] Allocating size: 43
+[20] Allocated: 0x55783a10a6f0, Content: 'Now is the time for all good people to com'
+[20] Reallocating 0x55783a10a6f0 to new size: 17
+[20] Reallocated: 0x55783a10a6f0, Content: 'Now is the time '
+
+[21] Allocating size: 171344
+[21] Allocated: 0x55783a10a730, Content: 'Now is the time for all good people to come to the aid of their country.'
+[21] Reallocating 0x55783a10a730 to new size: 191582
+[21] Reallocated: 0x55783a134490, Content: 'Now is the time for all good people to come to the aid of their country.'
+[3] Randomly freeing 0x557839f1c700 ('Now is the time for all good people to come to the aid of their ')
+
+[22] Allocating size: 47
+[22] Allocated: 0x55783a10a730, Content: 'Now is the time for all good people to come to'
+[22] Reallocating 0x55783a10a730 to new size: 49
+[22] Reallocated: 0x55783a10a730, Content: 'Now is the time for all good people to come to t'
+[21] Randomly freeing 0x55783a134490 ('Now is the time for all good people to come to the aid of their country.')
+
+[23] Allocating size: 10
+[23] Allocated: 0x557839f1c700, Content: 'Now is th'
+[23] Reallocating 0x557839f1c700 to new size: 9
+[23] Reallocated: 0x557839f1c700, Content: 'Now is t'
+[1] Randomly freeing 0x557839f512e8 ('Now is the time for all good people to come to the aid of their country.')
+
+[24] Allocating size: 47
+[24] Allocated: 0x55783a134490, Content: 'Now is the time for all good people to come to'
+[17] Randomly freeing 0x55783a10a6a0 ('Now is the time for all good people to come to the aid of ')
+
+[25] Allocating size: 40
+[25] Allocated: 0x557839f512e8, Content: 'Now is the time for all good people to '
+[13] Randomly freeing 0x55783a10a658 ('Now is the time for all good people to come to t')
+
+[26] Allocating size: 25
+[26] Allocated: 0x55783a10a6a0, Content: 'Now is the time for all '
+
+[27] Allocating size: 5
+[27] Allocated: 0x55783a10a658, Content: 'Now '
+[19] Randomly freeing 0x557839f8a2e8 ('Now is the time for all good people to come to the aid of their country.')
+
+[28] Allocating size: 73
+[28] Allocated: 0x557839f8a2e8, Content: 'Now is the time for all good people to come to the aid of their country.'
+
+[29] Allocating size: 72
+[29] Allocated: 0x55783a163100, Content: 'Now is the time for all good people to come to the aid of their country'
+[27] Randomly freeing 0x55783a10a658 ('Now ')
+[0] Already freed
+[1] Already freed
+[2] Freeing 0x557839f1c660 ('Now is the time for all good people to come')
+[3] Already freed
+[4] Already freed
+[5] Already freed
+[6] Already freed
+[7] Freeing 0x55783a058910 ('Now is the time for all good people to come to the aid of their country.')
+[8] Freeing 0x557839f1c6a8 ('Now is the time for all')
+[9] Already freed
+[10] Already freed
+[11] Already freed
+[12] Already freed
+[13] Already freed
+[14] Freeing 0x55783a10a630 ('Now is the time fo')
+[15] Already freed
+[16] Freeing 0x55783a076190 ('Now is the time for al')
+[17] Already freed
+[18] Already freed
+[19] Already freed
+[20] Freeing 0x55783a10a6f0 ('Now is the time ')
+[21] Already freed
+[22] Freeing 0x55783a10a730 ('Now is the time for all good people to come to t')
+[23] Freeing 0x557839f1c700 ('Now is t')
+[24] Freeing 0x55783a134490 ('Now is the time for all good people to come to')
+[25] Freeing 0x557839f512e8 ('Now is the time for all good people to ')
+[26] Freeing 0x55783a10a6a0 ('Now is the time for all ')
+[27] Already freed
+[28] Freeing 0x557839f8a2e8 ('Now is the time for all good people to come to the aid of their country.')
+[29] Freeing 0x55783a163100 ('Now is the time for all good people to come to the aid of their country')
