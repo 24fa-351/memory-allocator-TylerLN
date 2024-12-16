@@ -1,2 +1,2 @@
-malloc: malloc malloc.c memtest.c
+malloc: malloc malloc.c memtests.c 
 	gcc -Wall -Wextra malloc.c memtest.c -o memtest
